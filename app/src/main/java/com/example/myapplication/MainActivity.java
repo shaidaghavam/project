@@ -1,5 +1,6 @@
 package com.example.myapplication;
 
+import android.media.MediaPlayer;
 import android.os.Bundle;
 
 import com.google.android.material.snackbar.Snackbar;
@@ -19,13 +20,32 @@ import android.view.Menu;
 import android.view.MenuItem;
 
  public class MainActivity extends AppCompatActivity {
+     MediaPlayer mediaPlayer;
+
+     @Override
+     protected void onCreate(Bundle savedInstanceState) {
+         super.onCreate(savedInstanceState);
+         setContentView(R.layout.activity_main);
+         mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.ring);
+
+         mediaPlayer.start();
+
+     }
+
+     @Override
+     protected void onPause() {
+         super.onPause();
+         mediaPlayer.stop();
+         mediaPlayer.release();
+
+     }
 
 
-     private AppBarConfiguration appBarConfiguration;
+     /* private AppBarConfiguration appBarConfiguration;
      private ActivityMainBinding binding;
 
 
-     @Override
+    @Override
      protected void onCreate(Bundle savedInstanceState) {
          super.onCreate(savedInstanceState);
      }
