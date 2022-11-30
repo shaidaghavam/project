@@ -41,16 +41,31 @@ import android.view.MenuItem;
      }
 
 
-     /* private AppBarConfiguration appBarConfiguration;
-     private ActivityMainBinding binding;
+      private AppBarConfiguration appBarConfiguration;
+     private ActivityMainBinding binding;}
 
 
+
+   /* class Mainactivity extends AppCompatActivity {
+        @Override
+        protected void onCreate(Bundle savedInstanceState) {
+            super.onCreate(savedInstanceState);
+            setContentView(R.layout.activity_main);
+            img_play_button.setOnClickistener{
+
+
+
+
+        }
+    }
+*/
+/*
     @Override
      protected void onCreate(Bundle savedInstanceState) {
          super.onCreate(savedInstanceState);
      }
 
-/*
+
      binding= ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
@@ -102,6 +117,6 @@ import android.view.MenuItem;
 
 
     }
-    */
- }
 
+ }
+*/
