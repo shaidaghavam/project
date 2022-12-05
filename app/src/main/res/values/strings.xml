@@ -14,4 +14,5 @@
     <string name="unknown">unknown</string>
     <string name="lonely">Lonely</string>
     <string name="todo">TODO</string>
+    <string name="Colors" />
 </resources>
