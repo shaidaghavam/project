@@ -122,65 +122,67 @@
 
              />
 
+
          <ImageView
              android:id="@+id/img_shuffle"
              android:layout_width="48dp"
              android:layout_height="48dp"
              android:layout_marginStart="16dp"
-             android:layout_marginBottom="96dp"
+             android:layout_marginBottom="128dp"
              android:scaleType="centerCrop"
              android:src="@drawable/shuffle"
              app:layout_constraintBottom_toBottomOf="parent"
              app:layout_constraintStart_toStartOf="parent" />
 
-
          <ImageView
              android:id="@id/img_back"
              android:layout_width="44dp"
              android:layout_height="51dp"
-             android:layout_marginStart="20dp"
+             android:layout_marginStart="16dp"
              android:layout_marginTop="20dp"
              android:src="@drawable/back"
-             app:layout_constraintBottom_toBottomOf="parent"
+             app:layout_constraintBottom_toBottomOf="@+id/img_shuffle"
              app:layout_constraintStart_toEndOf="@+id/img_shuffle"
              app:layout_constraintTop_toBottomOf="@id/txt_song_name"
-             app:layout_constraintVertical_bias="0.293" />
+             app:layout_constraintVertical_bias="1.0" />
 
          <ImageView
              android:id="@+id/img_play_button"
              android:layout_width="48dp"
              android:layout_height="48dp"
              android:layout_marginStart="48dp"
-             android:layout_marginTop="60dp"
+             android:layout_marginTop="30dp"
              android:scaleType="centerCrop"
              android:src="@drawable/play_button"
-             app:layout_constraintHorizontal_bias="0.5"
+             android:clickable="true"
+             app:layout_constraintBottom_toBottomOf="@+id/img_back"
              app:layout_constraintStart_toEndOf="@+id/img_back"
-             app:layout_constraintTop_toBottomOf="@id/txt_song_name" />
+             app:layout_constraintTop_toBottomOf="@id/txt_song_name"
+
+             />
+
 
          <ImageView
              android:id="@+id/img_next.1"
              android:layout_width="52dp"
              android:layout_height="48dp"
-             android:layout_marginStart="28dp"
+             android:layout_marginStart="36dp"
              android:layout_marginTop="20dp"
              android:scaleType="centerCrop"
              android:src="@drawable/next_1"
-             app:layout_constraintBottom_toBottomOf="parent"
+             app:layout_constraintBottom_toBottomOf="@+id/img_play_button"
              app:layout_constraintStart_toEndOf="@+id/img_play_button"
              app:layout_constraintTop_toBottomOf="@id/txt_song_name"
-             app:layout_constraintVertical_bias="0.286" />
-
+             app:layout_constraintVertical_bias="0.777" />
 
          <ImageView
              android:id="@+id/img_update_arrows"
              android:layout_width="46dp"
              android:layout_height="44dp"
-             android:layout_marginBottom="96dp"
              android:scaleType="centerCrop"
              android:src="@drawable/update_arrows"
-             app:layout_constraintBottom_toBottomOf="parent"
-             tools:layout_editor_absoluteX="326dp" />
+             app:layout_constraintBottom_toBottomOf="@+id/img_next.1"
+             tools:layout_editor_absoluteX="335dp" />
 
 
      </androidx.constraintlayout.widget.ConstraintLayout>

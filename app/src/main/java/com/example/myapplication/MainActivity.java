@@ -25,7 +25,7 @@ import android.view.MenuItem;
      @Override
      protected void onCreate(Bundle savedInstanceState) {
          super.onCreate(savedInstanceState);
-         setContentView(R.layout.activity_main);
+         setContentView(R.layout.activity_main2);
          mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.ring);
 
          mediaPlayer.start();
@@ -41,25 +41,15 @@ import android.view.MenuItem;
      }
 
 
-      private AppBarConfiguration appBarConfiguration;
-     private ActivityMainBinding binding;}
+     }
 
 
-
-   /* class Mainactivity extends AppCompatActivity {
-        @Override
-        protected void onCreate(Bundle savedInstanceState) {
-            super.onCreate(savedInstanceState);
-            setContentView(R.layout.activity_main);
-            img_play_button.setOnClickistener{
-
-
-
-
-        }
-    }
-*/
 /*
+
+
+
+
+
     @Override
      protected void onCreate(Bundle savedInstanceState) {
          super.onCreate(savedInstanceState);
